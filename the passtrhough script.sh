@@ -87,7 +87,7 @@ rebind_gpu_to_i915() {
         if is_gpu_bound_to_i915; then
             echo "GPU successfully rebound to i915 driver."
         else
-            echo "Error: GPU could not be rebound to i915 driver."
+            echo "Error: GPU could not be rebound to i915 driver. It might still be in use or there may be a conflict."
             exit 1
         fi
     fi
